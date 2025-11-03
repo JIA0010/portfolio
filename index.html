@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Web Engineer Portfolio - モダンな技術で課題解決するフルスタックエンジニア">
-    <title>[Your Name] | Web Engineer Portfolio</title>
+    <meta name="description" content="CHEN JIA | Web Engineer Portfolio">
+    <title>CHEN JIA | Web Engineer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/sabolock-icon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -15,48 +16,47 @@
     <header class="hero">
         <nav class="nav">
             <div class="nav-container">
-                <a href="#" class="logo">[Your Name]</a>
+                <a href="#" class="logo">CHEN JIA</a>
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" data-ja="About" data-en="About">About</a></li>
+                    <li><a href="#projects" data-ja="Projects" data-en="Projects">Projects</a></li>
+                    <li><a href="#education" data-ja="Education" data-en="Education">Education</a></li>
+                    <li><a href="#skills" data-ja="Skills" data-en="Skills">Skills</a></li>
+                    <li><a href="#contact" data-ja="Contact" data-en="Contact">Contact</a></li>
                 </ul>
-                <button class="mobile-menu-toggle" aria-label="メニュー">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                <div class="nav-actions">
+                    <button id="language-toggle" class="language-toggle" aria-label="言語切り替え">
+                        <span class="lang-icon">🌐</span>
+                        <span class="lang-text">EN</span>
+                    </button>
+                    <button class="mobile-menu-toggle" aria-label="メニュー">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </div>
         </nav>
 
         <div class="hero-content">
             <h1 class="hero-title">
-                <span class="hero-name">[Your Name]</span>
+                <span class="hero-name">CHEN JIA</span>
                 <span class="hero-subtitle">Web Engineer Portfolio</span>
             </h1>
-            <p class="hero-tagline">モダンな技術で課題解決するフルスタックエンジニア</p>
+            <p class="hero-tagline" data-ja="フルスタックWebエンジニア / プロダクト開発" data-en="Full-stack Web Engineer — Product Development">フルスタックWebエンジニア / プロダクト開発</p>
             
             <div class="hero-links">
-                <a href="https://github.com/[your-username]" target="_blank" rel="noopener noreferrer" class="social-link">
+                <a href="https://github.com/JIA0010" target="_blank" rel="noopener noreferrer" class="social-link">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                     </svg>
                     GitHub
                 </a>
-                <a href="https://www.linkedin.com/in/[your-username]" target="_blank" rel="noopener noreferrer" class="social-link">
+                <a href="https://www.linkedin.com/in/JIA0010" target="_blank" rel="noopener noreferrer" class="social-link">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                     </svg>
                     LinkedIn
-                </a>
-                <a href="mailto:your.email@example.com" class="social-link">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
-                    Email
                 </a>
             </div>
         </div>
@@ -72,20 +72,20 @@
     <!-- About Section -->
     <section id="about" class="section about-section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-ja="About Me" data-en="About Me">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p class="about-intro">
-                        <strong>[Your Name]</strong>です。42Tokyoと放送大学に在籍しながら、Webエンジニアとしてのキャリアを目指しています。
+                    <p class="about-intro" data-ja="<strong>CHEN JIA</strong>です。42Tokyoと放送大学に在籍しつつ、現役のWebエンジニアとして活動しています。" data-en="I am <strong>CHEN JIA</strong>. While enrolled at 42Tokyo and The Open University of Japan, I am actively working as a Web Engineer.">
+                        <strong>CHEN JIA</strong>です。42Tokyoと放送大学に在籍しつつ、現役のWebエンジニアとして活動しています。
                     </p>
-                    <p>
-                        大学在学中には約1.5年間、個人事業主としてCtoCプラットフォーム開発やブログ運営などに挑戦しました。この経験から、技術的な視点だけでなく、ビジネスサイドの課題解決にも強い関心を持っています。
+                    <p data-ja="約2年間、個人事業主としてCtoCプラットフォーム開発や業務委託、自習室運営などに挑戦しました。この経験から、技術的な視点だけでなく、ビジネスサイドの課題解決にも強い関心を持っています。" data-en="During my university years, I worked as a sole proprietor for about 2 years, developing CtoC platforms, contract work, and managing study spaces. This experience has given me a strong interest not only in technical perspectives but also in solving business-side challenges.">
+                        約2年間、個人事業主としてCtoCプラットフォーム開発や業務委託、自習室運営などに挑戦しました。この経験から、技術的な視点だけでなく、ビジネスサイドの課題解決にも強い関心を持っています。
                     </p>
-                    <p>
+                    <p data-ja="現在は、TypeScriptを用いた開発、特にReact (Next.js)やNestJS、そしてクリーンアーキテクチャや<strong>TDD（テスト駆動開発）</strong>といった、スケーラブルで保守性の高いシステム設計技術の習得に注力しています。" data-en="Currently, I am focusing on TypeScript development, particularly React (Next.js) and NestJS, as well as mastering scalable and maintainable system design techniques such as Clean Architecture and <strong>TDD (Test-Driven Development)</strong>.">
                         現在は、TypeScriptを用いた開発、特にReact (Next.js)やNestJS、そしてクリーンアーキテクチャや<strong>TDD（テスト駆動開発）</strong>といった、スケーラブルで保守性の高いシステム設計技術の習得に注力しています。
                     </p>
-                    <p class="about-highlight">
-                        大学4年次にはシンガポールでの長期インターンシップを予定しており、グローバルな開発環境にも挑戦します。
+                    <p class="about-highlight" data-ja="42TokyoのCommon Coreを突破し、Advancedを履修するためシンガポールへのトランスファー準備中です。グローバルな開発環境での学びを目指しています。" data-en="After completing 42Tokyo's Common Core, I am preparing to transfer to Singapore to study the Advanced curriculum, aiming to learn in a global development environment.">
+                        42TokyoのCommon Coreを突破し、Advancedを履修するためシンガポールへのトランスファー準備中です。グローバルな開発環境での学びを目指しています。
                     </p>
                 </div>
             </div>
@@ -95,7 +95,7 @@
     <!-- Featured Project Section -->
     <section id="projects" class="section projects-section">
         <div class="container">
-            <h2 class="section-title">Featured Project</h2>
+            <h2 class="section-title" data-ja="Featured Project" data-en="Featured Project">Featured Project</h2>
             
             <article class="project-card featured-project">
                 <div class="project-image">
@@ -107,73 +107,72 @@
                 
                 <div class="project-content">
                     <h3 class="project-title">
-                        <span class="project-icon">🔒</span>
                         SaboLock (サボロック)
                     </h3>
                     
-                    <p class="project-summary">
+                    <p class="project-summary" data-ja="GPS位置情報と金銭的コミットメントを組み合わせた、行動経済学ベースの習慣化支援Webアプリケーション" data-en="A behavioral economics-based habit formation support web application that combines GPS location information and financial commitment">
                         GPS位置情報と金銭的コミットメントを組み合わせた、行動経済学ベースの習慣化支援Webアプリケーション
                     </p>
                     
-                    <p class="project-description">
+                    <p class="project-description" data-ja="SaboLockは、リモート学習やフリーランスワークにおける自己管理の難しさを解決するために開発したWebアプリケーションです。「デポジット + GPS連動判定」により、行動せざるを得ない環境を創出し、習慣化を支援します。" data-en="SaboLock is a web application developed to solve the difficulty of self-management in remote learning and freelance work. By combining 'deposit + GPS-linked verification', it creates an environment where users must take action, supporting habit formation.">
                         SaboLockは、リモート学習やフリーランスワークにおける自己管理の難しさを解決するために開発したWebアプリケーションです。「デポジット + GPS連動判定」により、行動せざるを得ない環境を創出し、習慣化を支援します。
                     </p>
 
                     <div class="project-details">
                         <div class="project-detail-section">
-                            <h4>採用技術・アーキテクチャ</h4>
+                            <h4 data-ja="採用技術・アーキテクチャ" data-en="Technologies & Architecture">採用技術・アーキテクチャ</h4>
                             <ul class="tech-list">
                                 <li><span class="tech-label">Frontend:</span> React, Next.js 15, TypeScript</li>
                                 <li><span class="tech-label">Backend:</span> NestJS 11, TypeScript, TypeORM</li>
                                 <li><span class="tech-label">Database:</span> PostgreSQL 17</li>
                                 <li><span class="tech-label">Infrastructure:</span> Docker, Vercel, Heroku</li>
-                                <li><span class="tech-label">Architecture:</span> クリーンアーキテクチャ、Monorepo (pnpm Workspaces)</li>
+                                <li><span class="tech-label">Architecture:</span> <span data-ja="レイヤードアーキテクチャ、Monorepo (pnpm Workspaces)" data-en="Layered Architecture, Monorepo (pnpm Workspaces)">レイヤードアーキテクチャ、Monorepo (pnpm Workspaces)</span></li>
                                 <li><span class="tech-label">Integration:</span> Stripe API, Google Maps API, Nodemailer</li>
                             </ul>
                         </div>
 
                         <div class="project-detail-section">
-                            <h4>担当領域</h4>
-                            <p>
+                            <h4 data-ja="担当領域" data-en="Responsibilities">担当領域</h4>
+                            <p data-ja="フルスタック開発。要件定義からDB設計、API開発、フロントエンド実装、インフラ構築まで一貫して担当しました。企画書の作成から、ER図・シーケンス図の設計、Docker環境構築、CI/CD構築まで、プロダクト開発の全工程を経験しました。" data-en="Full-stack development. I was consistently responsible from requirements definition to DB design, API development, frontend implementation, and infrastructure construction. I experienced the entire product development process, from proposal creation to ER diagram and sequence diagram design, Docker environment construction, and CI/CD setup.">
                                 フルスタック開発。要件定義からDB設計、API開発、フロントエンド実装、インフラ構築まで一貫して担当しました。企画書の作成から、ER図・シーケンス図の設計、Docker環境構築、CI/CD構築まで、プロダクト開発の全工程を経験しました。
                             </p>
                         </div>
 
                         <div class="project-detail-section">
-                            <h4>工夫した点</h4>
+                            <h4 data-ja="工夫した点" data-en="Key Features">工夫した点</h4>
                             <ul class="feature-list">
                                 <li>
-                                    <strong>モノレポアーキテクチャ:</strong> pnpm Workspacesで型定義やユーティリティを共有し、フロントエンド・バックエンド間の開発効率を向上
+                                    <strong data-ja="モノレポアーキテクチャ:" data-en="Monorepo Architecture:">モノレポアーキテクチャ:</strong> <span data-ja="pnpm Workspacesで型定義やユーティリティを共有し、フロントエンド・バックエンド間の開発効率を向上" data-en="Shared type definitions and utilities with pnpm Workspaces, improving development efficiency between frontend and backend">pnpm Workspacesで型定義やユーティリティを共有し、フロントエンド・バックエンド間の開発効率を向上</span>
                                 </li>
                                 <li>
-                                    <strong>クリーンアーキテクチャ:</strong> NestJSのDIコンテナとモジュール分割により、疎結合で保守性の高い設計を実現
+                                    <strong data-ja="クリーンアーキテクチャ:" data-en="Clean Architecture:">クリーンアーキテクチャ:</strong> <span data-ja="NestJSのDIコンテナとモジュール分割により、疎結合で保守性の高い設計を実現" data-en="Achieved loosely-coupled and highly maintainable design through NestJS DI container and module separation">NestJSのDIコンテナとモジュール分割により、疎結合で保守性の高い設計を実現</span>
                                 </li>
                                 <li>
-                                    <strong>外部API統合:</strong> Stripe決済、Google Maps API、メール送信など、複数の外部サービスを統合し、適切なエラーハンドリングとリトライ処理を実装
+                                    <strong data-ja="外部API統合:" data-en="External API Integration:">外部API統合:</strong> <span data-ja="Stripe決済、Google Maps API、メール送信など、複数の外部サービスを統合し、適切なエラーハンドリングとリトライ処理を実装" data-en="Integrated multiple external services including Stripe payments, Google Maps API, and email delivery with proper error handling and retry mechanisms">Stripe決済、Google Maps API、メール送信など、複数の外部サービスを統合し、適切なエラーハンドリングとリトライ処理を実装</span>
                                 </li>
                                 <li>
-                                    <strong>セキュリティ:</strong> JWT + bcryptによる認証基盤、TypeORMでのマイグレーション管理
+                                    <strong data-ja="セキュリティ:" data-en="Security:">セキュリティ:</strong> <span data-ja="JWT + bcryptによる認証基盤、TypeORMでのマイグレーション管理" data-en="Authentication infrastructure with JWT + bcrypt, migration management with TypeORM">JWT + bcryptによる認証基盤、TypeORMでのマイグレーション管理</span>
                                 </li>
                                 <li>
-                                    <strong>開発環境:</strong> Docker Composeによる環境統一とGitHub ActionsによるCI/CD構築
+                                    <strong data-ja="開発環境:" data-en="Development Environment:">開発環境:</strong> <span data-ja="Docker Composeによる環境統一とGitHub ActionsによるCI/CD構築" data-en="Environment standardization with Docker Compose and CI/CD setup with GitHub Actions">Docker Composeによる環境統一とGitHub ActionsによるCI/CD構築</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="project-links">
-                        <a href="https://github.com/JIA0010/SaboLock" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <a href="https://www.sabolock.com/" target="_blank" rel="noopener noreferrer" class="project-link">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                             </svg>
-                            GitHub Repository
+                            Visit Site
                         </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="project-link project-link-demo">
+                        <a href="https://note.com/jia_0010/n/ndad5ac835738" target="_blank" rel="noopener noreferrer" class="project-link project-link-demo">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <polygon points="10 8 16 12 10 16 10 8"></polygon>
                             </svg>
-                            Live Demo
+                            Project Details
                         </a>
                     </div>
                 </div>
@@ -182,32 +181,21 @@
     </section>
 
     <!-- Education & Experience Section -->
+        <!-- Education & Experience Section -->
     <section id="education" class="section education-section">
         <div class="container">
-            <h2 class="section-title">Education & Experience</h2>
+            <h2 class="section-title" data-ja="Education & Experience" data-en="Education & Experience">Education & Experience</h2>
             
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3 class="timeline-title">42Tokyo</h3>
-                        <span class="timeline-period">[入学年] - 在籍中</span>
-                        <p class="timeline-description">
-                            フランス発のエンジニア養成機関。Piscine（入学試験）を突破後、ピア・ラーニング（学生同士の学び合い）環境で、C言語の基礎からアルゴリズム、ネットワーク、Dockerコンテナ技術まで、幅広いカリキュラムに取り組んでいます。自ら課題を設定し、他者と協力しながら問題を解決する「自走力」を徹底的に鍛えました。
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">個人事業主</h3>
-                        <span class="timeline-period">[期間] (約1.5年間)</span>
+                        <h3 class="timeline-title" data-ja="個人事業主" data-en="Sole Proprietor">個人事業主</h3>
+                        <span class="timeline-period" data-ja="2021年4月 - 2023年4月" data-en="April 2021 - April 2023">2021年4月 - 2023年4月</span>
                         <ul class="timeline-list">
-                            <li>CtoCマッチングプラットフォームの開発・運営</li>
-                            <li>ブログメディアの運営</li>
-                            <li>シェアハウス・自習室の運営</li>
-                            <li>[その他事業]</li>
+                            <li data-ja="CtoCマッチングプラットフォームの開発・運営" data-en="Development and operation of CtoC matching platform">CtoCマッチングプラットフォームの開発・運営</li>
+                            <li data-ja="業務委託" data-en="Contract work">業務委託</li>
+                            <li data-ja="自習室の運営" data-en="Study space management">自習室の運営</li>
                         </ul>
                     </div>
                 </div>
@@ -215,10 +203,21 @@
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3 class="timeline-title">放送大学</h3>
-                        <span class="timeline-period">[入学年] - 在籍中</span>
-                        <p class="timeline-description">
-                            [専攻名・情報コースなど]
+                        <h3 class="timeline-title" data-ja="放送大学" data-en="The Open University of Japan">放送大学</h3>
+                        <span class="timeline-period" data-ja="2022年10月 - 在籍中" data-en="October 2022 - Present">2022年10月 - 在籍中</span>
+                        <p class="timeline-description" data-ja="教養学部教養学科" data-en="Faculty of Liberal Arts, Department of Liberal Arts">
+                            教養学部教養学科
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">42Tokyo</h3>
+                        <span class="timeline-period" data-ja="2023年5月 - 在籍中" data-en="May 2023 - Present">2023年5月 - 在籍中</span>
+                        <p class="timeline-description" data-ja="フランス発のエンジニア養成機関。Common Coreをすでに突破しており、Advancedを履修するため、シンガポールへのトランスファー（留学）準備中。" data-en="A French-origin engineer training institution. Already completed the Common Core and preparing to transfer to Singapore to study Advanced curriculum.">
+                            フランス発のエンジニア養成機関。Common Coreをすでに突破しており、Advancedを履修するため、シンガポールへのトランスファー（留学）準備中。
                         </p>
                     </div>
                 </div>
@@ -229,7 +228,7 @@
     <!-- Skills Section -->
     <section id="skills" class="section skills-section">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
+            <h2 class="section-title" data-ja="Skills" data-en="Skills">Skills</h2>
             
             <div class="skills-grid">
                 <div class="skill-category">
@@ -244,7 +243,7 @@
                         <li>TypeScript</li>
                         <li>JavaScript</li>
                         <li>C</li>
-                        <li>[その他]</li>
+                        <li>C++</li>
                     </ul>
                 </div>
 
@@ -271,14 +270,15 @@
                             <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
                             <line x1="12" y1="22.08" x2="12" y2="12"></line>
                         </svg>
-                        Architecture & Concepts
+                        <span data-ja="アーキテクチャ & 品質" data-en="Architecture & Quality">アーキテクチャ & 品質</span>
                     </h3>
                     <ul class="skill-list">
-                        <li>クリーンアーキテクチャ</li>
-                        <li>ヘキサゴナルアーキテクチャ</li>
-                        <li>オニオンアーキテクチャ</li>
-                        <li>TDD (テスト駆動開発)</li>
-                        <li>Monorepo</li>
+                        <li data-ja="モノレポアーキテクチャ (pnpm Workspaces)" data-en="Monorepo Architecture (pnpm Workspaces)">モノレポアーキテクチャ (pnpm Workspaces)</li>
+                        <li data-ja="マイクロサービスアーキテクチャ" data-en="Microservices Architecture">マイクロサービスアーキテクチャ</li>
+                        <li data-ja="レイヤードアーキテクチャ" data-en="Layered Architecture">レイヤードアーキテクチャ</li>
+                        <li data-ja="モジュラー設計 (関心の分離)" data-en="Modular Design (Separation of Concerns)">モジュラー設計 (関心の分離)</li>
+                        <li data-ja="トランザクション管理" data-en="Transaction Management">トランザクション管理</li>
+                        <li data-ja="ユニットテスト / 統合テスト (Jest)" data-en="Unit Testing / Integration Testing (Jest)">ユニットテスト / 統合テスト (Jest)</li>
                     </ul>
                 </div>
 
@@ -295,6 +295,7 @@
                         <li>Docker</li>
                         <li>Git / GitHub</li>
                         <li>PostgreSQL</li>
+                        <li>MySQL</li>
                         <li>Vercel / Heroku</li>
                     </ul>
                 </div>
@@ -309,7 +310,8 @@
                     </h3>
                     <ul class="skill-list">
                         <li>PWA (Progressive Web Apps)</li>
-                        <li>AI Agents</li>
+                        <li>mobile development</li>
+                        <li>AI development</li>
                     </ul>
                 </div>
             </div>
@@ -319,26 +321,19 @@
     <!-- Contact Section -->
     <section id="contact" class="section contact-section">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <p class="contact-intro">
+            <h2 class="section-title" data-ja="Contact" data-en="Contact">Contact</h2>
+            <p class="contact-intro" data-ja="お仕事のご相談、技術的なディスカッションなど、お気軽にご連絡ください。" data-en="Feel free to contact me for work inquiries, technical discussions, or collaboration opportunities.">
                 お仕事のご相談、技術的なディスカッションなど、お気軽にご連絡ください。
             </p>
             
             <div class="contact-links">
-                <a href="mailto:your.email@example.com" class="contact-link">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
-                    <span>your.email@example.com</span>
-                </a>
-                <a href="https://www.linkedin.com/in/[your-username]" target="_blank" rel="noopener noreferrer" class="contact-link">
+                <a href="https://www.linkedin.com/in/jia0010/" target="_blank" rel="noopener noreferrer" class="contact-link">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                     </svg>
                     <span>LinkedIn Profile</span>
                 </a>
-                <a href="https://github.com/[your-username]" target="_blank" rel="noopener noreferrer" class="contact-link">
+                <a href="https://github.com/JIA0010" target="_blank" rel="noopener noreferrer" class="contact-link">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                     </svg>
@@ -351,7 +346,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+            <p>&copy; 2025 CHEN JIA. All rights reserved.</p>
         </div>
     </footer>
 

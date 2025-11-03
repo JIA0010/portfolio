@@ -2,7 +2,7 @@
 
 ## Option 1: Using GitHub Pages (Simple)
 
-1. Create a new repository on GitHub named `[your-username].github.io`
+1. Create a new repository on GitHub named `JIA0010.github.io`
 2. Push your portfolio files to the repository:
 
 ```bash
@@ -11,11 +11,11 @@ git init
 git add .
 git commit -m "Initial commit: Portfolio website"
 git branch -M main
-git remote add origin https://github.com/[your-username]/[your-username].github.io.git
+git remote add origin https://github.com/JIA0010/JIA0010.github.io.git
 git push -u origin main
 ```
 
-3. Your site will be live at: `https://[your-username].github.io/`
+3. Your site will be live at: `https://JIA0010.github.io/`
 
 ## Option 2: Using a Project Repository
 
@@ -27,22 +27,19 @@ git init
 git add .
 git commit -m "Initial commit: Portfolio website"
 git branch -M main
-git remote add origin https://github.com/[your-username]/portfolio.git
+git remote add origin https://github.com/JIA0010/portfolio.git
 git push -u origin main
 ```
 
 3. Go to repository Settings → Pages
 4. Under "Source", select the `main` branch
-5. Your site will be live at: `https://[your-username].github.io/portfolio/`
+5. Your site will be live at: `https://JIA0010.github.io/portfolio/`
 
 ## Before Publishing Checklist
 
-- [ ] Replace all `[Your Name]` placeholders with your actual name
-- [ ] Update all `[your-username]` with your GitHub username
-- [ ] Replace `your.email@example.com` with your actual email
 - [ ] Add SaboLock screenshot to `assets/` folder
 - [ ] Update education dates and details
-- [ ] Test all links (GitHub, LinkedIn, Email)
+- [ ] Test all links (GitHub, LinkedIn)
 - [ ] Test on mobile devices
 - [ ] Check all sections for typos
 

@@ -20,9 +20,6 @@ portfolio/
 
 `index.html` を開き、以下のプレースホルダーを実際の情報に置き換えてください：
 
-- `[Your Name]` → あなたの名前
-- `[your-username]` → GitHubユーザー名
-- `your.email@example.com` → メールアドレス
 - `[入学年]` → 実際の入学年
 - `[期間]` → 個人事業の期間
 - `[専攻名]` → 放送大学の専攻名
@@ -60,18 +57,18 @@ git init
 git add .
 git commit -m "Initial commit: Portfolio website"
 git branch -M main
-git remote add origin https://github.com/[your-username]/portfolio.git
+git remote add origin https://github.com/JIA0010/portfolio.git
 git push -u origin main
 ```
 
 3. リポジトリの Settings → Pages → Source で `main` ブランチを選択
-4. `https://[your-username].github.io/portfolio/` でアクセス可能になります
+4. `https://JIA0010.github.io/portfolio/` でアクセス可能になります
 
 ### 方法2: 手動デプロイ
 
-1. リポジトリ名を `[your-username].github.io` にする
+1. リポジトリ名を `JIA0010.github.io` にする
 2. ファイルをプッシュ
-3. `https://[your-username].github.io/` で直接アクセス可能
+3. `https://JIA0010.github.io/` で直接アクセス可能
 
 ## ✨ 機能
 
@@ -131,5 +128,5 @@ MIT License - 自由に使用・カスタマイズしてください。
 
 ---
 
-**作成者**: [Your Name]  
+**作成者**: CHEN JIA  
 **更新日**: 2025年11月2日

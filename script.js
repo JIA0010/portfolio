@@ -1,4 +1,50 @@
 // ===================================
+// Language Toggle
+// ===================================
+let currentLang = 'ja'; // Default language
+
+function switchLanguage(lang) {
+    currentLang = lang;
+    document.documentElement.lang = lang;
+    
+    // Update all elements with data-ja and data-en attributes
+    const elements = document.querySelectorAll('[data-ja][data-en]');
+    elements.forEach(element => {
+        const text = element.getAttribute(`data-${lang}`);
+        if (text) {
+            element.innerHTML = text;
+        }
+    });
+    
+    // Update button text
+    const langToggle = document.getElementById('language-toggle');
+    const langText = langToggle.querySelector('.lang-text');
+    if (langText) {
+        langText.textContent = lang === 'ja' ? 'EN' : 'JA';
+    }
+    
+    // Save preference
+    localStorage.setItem('preferredLanguage', lang);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize language from localStorage
+    const savedLang = localStorage.getItem('preferredLanguage');
+    if (savedLang && savedLang !== 'ja') {
+        switchLanguage(savedLang);
+    }
+    
+    // Language toggle button
+    const languageToggle = document.getElementById('language-toggle');
+    if (languageToggle) {
+        languageToggle.addEventListener('click', () => {
+            const newLang = currentLang === 'ja' ? 'en' : 'ja';
+            switchLanguage(newLang);
+        });
+    }
+});
+
+// ===================================
 // Smooth Scroll & Navigation
 // ===================================
 document.addEventListener('DOMContentLoaded', () => {
